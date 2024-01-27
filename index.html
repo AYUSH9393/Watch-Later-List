@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch Later List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <h1 class="title">Watch Later List</h1>
+      <form id="addRecordForm" class="form">
+        <input type="text" id="title" placeholder="Title" class="input" required>
+        <select id="platform" class="input" required>
+          <option value="">Select Platform</option>
+          <option value="Prime">Prime</option>
+          <option value="Netflix">Netflix</option>
+          <option value="Youtube">Youtube</option>
+          <option value="Disney+">Disney+</option>
+          <option value="Jio cinema">Jio cinema</option>
+        </select>
+        
+        <select id="genre" class="input" required>
+          <option value="">Select Genre</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Horror">Horror</option>
+          <option value="Action">Action</option>
+          <option value="Drama">Drama</option>
+          <option value="Science Fiction">Science Fiction</option> 
+        </select>
+        
+        <input type="url" id="link" placeholder="Link" class="input" required>
+        <div class="checkbox-container">
+          <input type="checkbox" id="isAdult" class="input">
+          <label for="isAdult" class="checkbox-label">18+ Show</label>
+        </div>
+        <button type="submit" class="button">Add Record</button>
+      </form>
+    </div>
+    <!-- Display records here -->
+    <div id="recordList" class="container"></div>
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
